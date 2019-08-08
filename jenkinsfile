@@ -1,9 +1,4 @@
 node('TestServer'){
-   stage('Puppetins') { // for display purposes
-      // install puppet agent
-      sh "apt-get update"
-      sh "apt-get install -yq puppet"
-   }
    stage('puppetagent') {
       // Run puppet agent
       /usr/bin/puppet agent -t
