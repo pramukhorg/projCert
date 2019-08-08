@@ -1,16 +1,12 @@
 node('TestServer'){
    stage('Puppetins') { // for display purposes
       // install puppet agent
-      export LC_ALL="en_US.UTF-8" && \
-      export LC_CTYPE="en_US.UTF-8" && \
-      wget https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb && \
-      sudo dpkg -i puppetlabs-release-pc1-xenial.deb && \
-      sudo apt-get update -y && \
-      sudo apt-get install puppet-agent -y
+      sh "echo hello"
+      sh "echo kavi"
    }
    stage('puppetagent') {
       // Run puppet agent
-      /usr/bin/puppet agent -t
+      sh "echo hi"
    }
 
 }
