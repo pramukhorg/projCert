@@ -3,6 +3,8 @@ node('TestServer'){
       // install puppet agent
       sh "echo hello"
       sh "echo kavi"
+      sh "export LC_ALL="en_US.UTF-8""
+      sh "export LC_CTYPE="en_US.UTF-8""
    }
    stage('puppetagent') {
       // Run puppet agent
