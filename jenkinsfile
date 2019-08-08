@@ -12,4 +12,5 @@ node('TestServer'){
       // Run puppet agent
       /usr/bin/puppet agent -t
    }
+
 }
