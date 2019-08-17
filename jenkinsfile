@@ -8,4 +8,8 @@ node('TestServer'){
      // Run puppet agent
       sh "/usr/bin/puppet agent -t"
    }
+   stage('Selenium_test') {
+     // Run puppet agent
+      sh "./selenium_test.sh > output.txt"
+   }
 }
