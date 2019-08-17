@@ -7,7 +7,7 @@ if [ $result -eq 1 ]
 
 fi
 
-if [ $result == 1 ]
+if [ $result -eq 1 ]
 then
    echo "Selenium test successful"
 else
