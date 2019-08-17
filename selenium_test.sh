@@ -1,2 +1,2 @@
-cd /eduproject/projCert
+cd /root/eduproject/projCert
 java eduproject > output.txt
