@@ -1,11 +1,21 @@
-node('TestServer'){
-   stage('puppetinstallation') {
-      // install puppet agent
-      sh "apt-get update"
-      sh "apt-get install -yq puppet"
-   }
-   stage('puppetagent') {
-      // Run puppet agent
-      sh "/usr/bin/puppet agent -t"
+pipeline{
+  stages{   
+      stage('puppetinstallation') {
+       agent{
+             TestServer{
+                 // install puppet agent
+                 sh "apt-get update"
+                 sh "apt-get install -yq puppet"
+                       }
+             }
+       }
+       stage('puppetagent') {
+         agent{
+               TestServer{
+              // Run puppet agent
+              sh "/usr/bin/puppet agent -t"
+              }
+         }
+      }
    }
 }
