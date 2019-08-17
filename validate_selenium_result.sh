@@ -1,6 +1,6 @@
 cd /root/eduproject/projCert
 
-export result=`grep -i success output.txtbkp | wc -l`
+export result=`grep -i success output.txt | wc -l`
 
 if [ $result -eq 1 ]
 then
