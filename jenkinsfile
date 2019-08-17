@@ -12,6 +12,6 @@ node('TestServer'){
    }
    stage('Selenium_test') {
      // Run puppet agent
-      sh "./selenium_test.sh > output.txt"
+      sh "./root/eduproject/projCert/selenium_test.sh > output.txt"
    }
 }
