@@ -6,7 +6,7 @@ node('TestServer'){
    }
    stage('puppetagent') {
      // Run puppet agent
-      sh "/usr/bin/puppet agent -t"
+      //sh "/usr/bin/puppet agent -t"
       //sh "./selenium_test.sh > output.txt"
       echo "hi"
    }
