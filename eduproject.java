@@ -12,7 +12,7 @@ public class eduproject {
                 chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("--no-sandbox");
 		WebDriver driver = new ChromeDriver(chromeOptions);
-		driver.get("http://ec2-3-15-169-82.us-east-2.compute.amazonaws.com:8080/");
+		driver.get("http://localhost:8080/");
 		//driver.manage().window().maximize();
 		driver.findElement(By.id("About Us")).click();
 		Thread.sleep(20);
